@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservation | Terrace Takasago</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="fixed w-full z-50 glass-nav px-8 py-6">
+        <div class="max-w-7xl mx-auto flex justify-between items-center">
+            <a href="index.html" class="text-2xl font-black tracking-tighter uppercase">Terrace Takasago</a>
+            <div class="hidden md:flex gap-12 font-medium text-sm tracking-widest uppercase">
+                <a href="index.html" class="hover:text-accent transition">Home</a>
+                <a href="menu.html" class="hover:text-accent transition">Menu</a>
+                <a href="access.html" class="hover:text-accent transition">Access</a>
+                <a href="reserve.html" class="text-accent">Reserve</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="pt-40 pb-24 px-8 max-w-4xl mx-auto">
+        <div class="text-center mb-16">
+            <h1 class="text-5xl font-black tracking-tighter mb-6">Reservation</h1>
+            <p class="text-gray-500 leading-relaxed">
+                お席のご予約を承っております。特に週末やランチタイムは混み合うことが多いため、<br class="hidden md:block">事前のご予約をお勧めしております。
+            </p>
+        </div>
+
+        <form class="space-y-10 bg-white p-12 rounded-[2.5rem] shadow-xl border border-gray-50">
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="space-y-2">
+                    <label class="text-xs font-bold tracking-widest uppercase text-accent ml-1">Name</label>
+                    <input type="text" placeholder="お名前" class="w-full px-6 py-4 rounded-xl">
+                </div>
+                <div class="space-y-2">
+                    <label class="text-xs font-bold tracking-widest uppercase text-accent ml-1">Email</label>
+                    <input type="email" placeholder="メールアドレス" class="w-full px-6 py-4 rounded-xl">
+                </div>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="space-y-2">
+                    <label class="text-xs font-bold tracking-widest uppercase text-accent ml-1">Date</label>
+                    <input type="date" class="w-full px-6 py-4 rounded-xl">
+                </div>
+                <div class="space-y-2">
+                    <label class="text-xs font-bold tracking-widest uppercase text-accent ml-1">Time</label>
+                    <input type="time" class="w-full px-6 py-4 rounded-xl">
+                </div>
+                <div class="space-y-2">
+                    <label class="text-xs font-bold tracking-widest uppercase text-accent ml-1">Guests</label>
+                    <select class="w-full px-6 py-4 rounded-xl bg-gray-50/50">
+                        <option>1 名</option>
+                        <option>2 名</option>
+                        <option>3 名</option>
+                        <option>4 名以上</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="space-y-2">
+                <label class="text-xs font-bold tracking-widest uppercase text-accent ml-1">Message</label>
+                <textarea rows="4" placeholder="ご要望やアレルギーなど（任意）" class="w-full px-6 py-4 rounded-xl"></textarea>
+            </div>
+
+            <button type="submit" class="w-full bg-primary text-white py-6 rounded-xl font-bold tracking-[0.2em] uppercase hover:bg-accent transition-all duration-300 shadow-lg">
+                Confirm Reservation
+            </button>
+            
+            <div class="text-center mt-8">
+                <p class="text-xs text-gray-400">
+                    ※ご予約の確認には24時間以内にメールにて返信させていただきます。<br>
+                    ※当日、前日のキャンセルはお電話にてご連絡をお願いいたします。
+                </p>
+            </div>
+        </form>
+    </main>
+</body>
+</html>
